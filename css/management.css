@@ -1,0 +1,180 @@
+
+#profile {
+        position: relative;
+    max-width: 1000px;
+}
+.profileSection{
+
+    color: dimgrey;
+    
+    display: grid;
+    grid-template-columns: max-content auto min-content;
+    align-items: center;
+}
+#profile form{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:   auto auto;
+    
+}
+#profile form label{
+    	white-space: nowrap;
+	padding: 11px 15px;
+
+}
+
+#profile .gInput{
+    
+    
+}
+#profile x-icon{
+cursor: pointer;
+}
+#profile .gInput input[name="DOB"]:before {
+	content: "";
+}
+.tab{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+}
+.tab.disabled{
+    display: none;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel{
+  padding: 0 10px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel.orders .holder {
+    display: grid;
+    grid-template-columns: auto auto; 
+    margin: 10px 0;
+        grid-gap: 9px;
+}
+
+ ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+  ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+  }
+
+ .rectangle-list span{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+  }
+
+  .rectangle-list span:hover{
+    background: #eee;
+  }
+
+  .rectangle-list span:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .rectangle-list span:after{
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+  }
+
+  .rectangle-list span:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;
+  }
+.items{
+    display: grid;
+    grid-gap: 10px;
+    align-content: baseline;
+}
+.items .card img{
+    width: 90px;
+}
+.items .card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.order-details{
+        display: grid;
+    align-content: space-between;
+}
+.fullname{
+        margin-bottom: 9px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+#profileForm, #address form{
+    display: grid;
+    grid-template-columns: max-content max-content
+}
+
+
+@media screen and (max-width: 768px) {
+    
+   #main form{
+    grid-template-columns: auto !important;
+        }
+    }

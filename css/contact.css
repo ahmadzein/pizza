@@ -1,0 +1,46 @@
+
+#main{
+    display: block;
+}
+
+#contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+    max-width: 1000px;
+        margin: auto;
+
+}
+#contact h2{
+    margin-bottom: 9px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.row{
+        display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 10px
+}
+
+.gInput textarea{
+    border: none;
+    outline: none}
+.gInput textarea:focus{
+    border: none;
+    outline: none
+}
+
+#mapHolder{
+        display: grid;
+}
+#map {
+        min-height: 300px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row{
+    grid-template-columns:   auto
+}
+}

@@ -1,0 +1,76 @@
+
+#slider {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+#slider img {
+	width: 80%;
+	max-width: 300px;
+}
+
+#tagline {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+
+#recommendations {
+	grid-area: 3 / 1 / 4 / 2;
+	margin: 0 20px;
+}
+
+#recommendations #items {
+	display: grid;
+    grid-template-columns: max-content max-content max-content;
+   
+    	grid-gap: 15px;
+        justify-content: center;
+}
+
+#tagline h1{font-size: 9vw;
+    text-align: center;
+    color: white;
+    line-height: 9vw;
+    font-weight:900;
+    text-shadow: 2px 2px 0px #c1192b, 4px 4px 0px #730f0f, 6px 6px 0px #7b5c5c, 9px 9px 0px #9c8989, 12px 12px 0px #9e9595, 15px 15px 0px #a0a0a0, 13px 16px 1px #b3b3b3, 12px 17px 1px #c3c0c0, 11px 18px 1px #d4d3d3;
+    margin: 20px 0;
+}
+#recommendations h1{
+     text-shadow: 2px 2px 0px #c1192b, 3px 3px 0px #730f0f, 4px 4px 0px #7b5c5c, 5px 5px 0px #9c8989, 6px 6px 0px #9e9595;
+    color: white;
+    margin: 10px 0;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    #recommendations #items{
+    grid-template-columns: min-content min-content min-content;
+   
+    }
+}
+
+@media screen and (max-width: 940px) {
+    
+    #recommendations #items{
+    grid-template-columns: max-content max-content;
+   
+    }
+}
+
+@media screen and (max-width: 660px) {
+    
+    #recommendations #items{
+    grid-template-columns: min-content min-content;
+   
+    }
+}
+    @media screen and (max-width: 620px) {
+        #recommendations{
+            text-align: center;
+        }
+    #recommendations #items{
+    grid-template-columns: min-content ;
+    }
+}
+
